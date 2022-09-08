@@ -1,0 +1,20 @@
+<h1 class="mb-5 text-primary">Listado contactos</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Email</th>
+            <th scope="col">Mensaje</th>
+            <th scope="col">Suma</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of datos">
+            <td>{{user.name}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.msj}}</td>
+            <td>{{user.suma}}</td>
+        </tr>
+    </tbody>
+</table>
